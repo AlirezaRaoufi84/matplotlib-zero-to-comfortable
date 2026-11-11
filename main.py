@@ -67,3 +67,20 @@ plt.xlabel("food")
 plt.ylabel("Quantity")
 
 plt.show()
+
+# Pie chart
+
+categories = ["math", "science", "religion", "english"]
+values = [17.5, 20, 14, 13]
+colors = ["red", "blue", "green", "orange"]
+plt.pie(
+    values,
+    labels=categories,
+    autopct="%1.1f%%",
+    colors=colors,
+    explode=[0, 0, 0, 0.1],
+    shadow=False,
+    startangle=90,
+)
+plt.title("Imaginary grades")
+plt.show()
