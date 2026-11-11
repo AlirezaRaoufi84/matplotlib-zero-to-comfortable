@@ -55,3 +55,15 @@ x = [1, 2, 3, 4, 5, 6, 7]
 y = [10, 20, 30, 40, 50, 60, 70]
 
 plt.grid(axis="y", linewidth=2, color="lightgray", line_style="dashed")
+
+# Bar chart
+food_cat = np.array(["Grains", "Fruit", "Vegetables", "Protein", "Dairy", "Sweets"])
+daily_values = np.array([4, 3, 1, 5, 3, 2])
+
+plt.bar(food_cat, daily_values, color="pink")
+# plt.barh(food_cat , daily_values, color='pink') for horizantal bar
+plt.title("Daily consumptions")
+plt.xlabel("food")
+plt.ylabel("Quantity")
+
+plt.show()
