@@ -39,7 +39,13 @@ line_style = dict(
     linestyle="solid",
     linewidth=1.5,
 )
-plt.plot(years, dollar_values, color="#1303f5")
-plt.plot(years, euro_values, color="#02ad77")
-plt.plot(years, dirham_values, color="#be2323")
+
+plt.tick_params(axis="both", colors="#431A04")
+plt.title("Currency value in years", fontsize=18, family="Arial")
+plt.xlabel("years", fontsize=18)
+plt.ylabel("IRR vlaue", fontsize=18)
+plt.plot(years, dollar_values, color="#1303f5", **line_style)
+plt.plot(years, euro_values, color="#02ad77", **line_style)
+plt.plot(years, dirham_values, color="#be2323", **line_style)
+plt.xticks(years)
 plt.show()
