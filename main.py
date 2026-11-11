@@ -49,3 +49,9 @@ plt.plot(years, euro_values, color="#02ad77", **line_style)
 plt.plot(years, dirham_values, color="#be2323", **line_style)
 plt.xticks(years)
 plt.show()
+
+# Grid lines
+x = [1, 2, 3, 4, 5, 6, 7]
+y = [10, 20, 30, 40, 50, 60, 70]
+
+plt.grid(axis="y", linewidth=2, color="lightgray", line_style="dashed")
