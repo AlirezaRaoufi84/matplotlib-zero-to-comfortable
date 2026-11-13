@@ -97,4 +97,5 @@ plt.scatter(study_hourA, gradesA, color="orange", alpha=0.5, s=140, label="Class
 plt.scatter(study_hourB, gradesB, color="green", alpha=0.5, s=140, label="Class B")
 plt.xlabel("hours studied")
 plt.ylabel("Grades")
+plt.legend()
 plt.show()
