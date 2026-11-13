@@ -84,3 +84,17 @@ plt.pie(
 )
 plt.title("Imaginary grades")
 plt.show()
+
+# scatter graph
+
+study_hourA = np.array([0, 1, 1.2, 2, 2.15, 3, 4.5, 5.7])
+gradesA = np.array([13, 15, 17, 16.75, 18.5, 20, 20, 20])
+
+study_hourB = np.array([0, 0, 1, 1, 2, 3, 3.15, 3.30])
+gradesB = np.array([11, 12, 12.5, 13, 15.25, 17, 19, 20])
+plt.title("Test Score")
+plt.scatter(study_hourA, gradesA, color="orange", alpha=0.5, s=140, label="Class A")
+plt.scatter(study_hourB, gradesB, color="green", alpha=0.5, s=140, label="Class B")
+plt.xlabel("hours studied")
+plt.ylabel("Grades")
+plt.show()
