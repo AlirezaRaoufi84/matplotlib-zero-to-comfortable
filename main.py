@@ -99,3 +99,13 @@ plt.xlabel("hours studied")
 plt.ylabel("Grades")
 plt.legend()
 plt.show()
+
+# Histogram
+
+scores = np.random.normal(loc=75, scale=10, size=100)
+scores = np.clip(scores, 0, 100)
+plt.hist(scores, bins=15, color="orange", edgecolor="purple")
+plt.title("Exam Scores")
+plt.xlabel("Score")
+plt.ylabel("# Of Students")
+plt.show()
